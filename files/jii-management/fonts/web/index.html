@@ -79,8 +79,15 @@
             padding: 0px;
             overflow: hidden;
         }
-        .demo{
-            padding:20px;
+        .demo {
+            min-height: calc(100vh - 8rem);
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+            margin-bottom: 4rem;
         }
         .font-container {
             overflow-x: auto;
@@ -140,11 +147,13 @@
             left: 0;
         }
         .header {
-            display: flex;
-            align-content: center;
-            align-items: center;
-            justify-content: space-between;
-            padding:20px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #002451;
+        margin-bottom: 4rem;
         }
         .header h2 {
             padding:0px;
@@ -291,23 +300,23 @@
 
 
     <div class="demo">
-
+        <h2 class="hero">
+            TEXT STYLE GUIDE
+        </h2>
        
         <h2 class="medium">
-            Founders Grotesk Medium - 15px
+            Founders Grotesk Medium
          </h2>
 
          <h2  class="medium-italic">
-            Founders Grotesk Medium Italic - 15px
+            Founders Grotesk Medium Italic
          </h2>
-         </div>
-         <div class="demo">
          <h2 class="regular">
-            Founders Grotesk Regular - 15px
+            Founders Grotesk Regular
          </h2>
 
          <h2 class="regular-italic">
-            Founders Grotesk Regular Italic - 15px
+            Founders Grotesk Regular Italic
          </h2>
 
         <p><a href="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/foundersgrotesk.zip?v=1742849107">Download kit&nbsp;&darr;</a></p>
