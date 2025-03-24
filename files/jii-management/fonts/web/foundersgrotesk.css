@@ -1,26 +1,23 @@
 @font-face {
     font-family: 'Founders Grotesk Medium';
-    src: url('FoundersGrotesk-Medium.woff2') format('woff2'),
-        url('FoundersGrotesk-Medium.woff') format('woff'),
-        url('FoundersGrotesk-Medium.svg#FoundersGrotesk-Medium') format('svg');
+    src: url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-Medium.woff2?v=1742847656') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-Medium.woff?v=1742847656') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Founders Grotesk Medium Italic';
-    src: url('FoundersGrotesk-MediumItalic.woff2') format('woff2'),
-        url('FoundersGrotesk-MediumItalic.woff') format('woff'),
-        url('FoundersGrotesk-MediumItalic.svg#FoundersGrotesk-MediumItalic') format('svg');
+    src: url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-MediumItalic.woff2?v=1742847656') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-MediumItalic.woff?v=1742847656') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
     font-family: 'Founders Grotesk Regular Italic';
-    src: url('FoundersGrotesk-RegularItalic.woff2') format('woff2'),
-        url('FoundersGrotesk-RegularItalic.woff') format('woff'),
-        url('FoundersGrotesk-RegularItalic.svg#FoundersGrotesk-RegularItalic') format('svg');
+    src: url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-RegularItalic.woff2?v=1742847656') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-RegularItalic.woff?v=1742847656') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -28,9 +25,8 @@
 
 @font-face {
     font-family: 'Founders Grotesk Regluar';
-    src: url('FoundersGrotesk-Regular.woff2') format('woff2'),
-        url('FoundersGrotesk-Regular.woff') format('woff'),
-        url('FoundersGrotesk-Regular.svg#FoundersGrotesk-Regular') format('svg');
+    src: url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-Regular.woff2?v=1742847656') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0666/6269/4959/files/FoundersGrotesk-Regular.woff?v=1742847656') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
