@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Founders Grotesk Medium';
+    src: url('FoundersGrotesk-Medium.woff2') format('woff2'),
+        url('FoundersGrotesk-Medium.woff') format('woff'),
+        url('FoundersGrotesk-Medium.svg#FoundersGrotesk-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Founders Grotesk Medium Italic';
+    src: url('FoundersGrotesk-MediumItalic.woff2') format('woff2'),
+        url('FoundersGrotesk-MediumItalic.woff') format('woff'),
+        url('FoundersGrotesk-MediumItalic.svg#FoundersGrotesk-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Founders Grotesk Regular Italic';
+    src: url('FoundersGrotesk-RegularItalic.woff2') format('woff2'),
+        url('FoundersGrotesk-RegularItalic.woff') format('woff'),
+        url('FoundersGrotesk-RegularItalic.svg#FoundersGrotesk-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk Regluar';
+    src: url('FoundersGrotesk-Regular.woff2') format('woff2'),
+        url('FoundersGrotesk-Regular.woff') format('woff'),
+        url('FoundersGrotesk-Regular.svg#FoundersGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
