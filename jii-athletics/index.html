@@ -759,7 +759,52 @@
 
   
 </div>
-
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+      min-width: 80px;
+    }
+  
+    /* Make table scrollable on small screens */
+    .schedule-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    /* Optional: sticky first column for time labels */
+    td:first-child, th:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #fff;
+      z-index: 2;
+    }
+  
+    /* Highlight first column */
+    td:first-child {
+      background: #f0f0f0;
+      font-weight: bold;
+    }
+  
+    /* Mobile-specific tweaks */
+    @media (max-width: 768px) {
+      th, td {
+        font-size: 12px;
+        padding: 6px;
+      }
+  
+      table {
+        font-size: 12px;
+      }
+    }
+  </style>
+  
 
 
 
