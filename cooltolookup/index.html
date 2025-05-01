@@ -355,10 +355,22 @@
 			padding-bottom:60px;
 			border-bottom: 1px solid var(--border-color);
 			}      
+
+            .images {
+                display: flex;
+                width: 100%;
+                overflow-x: scroll;
+                padding-right: calc(100% - 530px);
+            }
+
+
 			.image img{
-			width:100%;
-			margin:2rem auto;
-			display:inline-block;
+                margin: 2rem auto;
+                display: block;
+                height: 70vh;
+                object-fit: contain;
+                width: 100%;
+                min-width: 800px;
 			}
 			img.heading{
 			width:100%;
@@ -476,6 +488,7 @@
 
 
 				</div>
+                </div>
 				<p>IN DEVELOPMENT</p>
 			</div>
 
