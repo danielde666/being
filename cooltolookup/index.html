@@ -634,9 +634,16 @@ td{
             .images {
                 display: flex;
                 width: 100%;
-                overflow-x: scroll;
-                padding-left:1rem;
+                overflow-x: auto;
+                padding-left:0;
+  -webkit-overflow-scrolling: touch;
+                
             }
+
+            .images::-webkit-scrollbar {
+        display: none;
+        }
+
 
 
 			.image img{
