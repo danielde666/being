@@ -38,37 +38,55 @@
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
 			scroll-behavior: smooth;
 			}
+
+
 			html,body{
 			width:100%;
 			}
+
+
 			/* HTML5 display-role reset for older browsers */
 			article, aside, details, figcaption, figure,
 			footer, header, hgroup, menu, nav, section {
 			display: block;
 			}
+
+
 			body {
 			line-height: 1;
 			}
+
+
 			ol, ul {
 			list-style: none;
 			}
+
+
 			blockquote, q {
 			quotes: none;
 			}
+
+
 			blockquote:before, blockquote:after,
 			q:before, q:after {
 			content: '';
 			content: none;
 			}
+
+
 			table {
 			border-collapse: collapse;
 			border-spacing: 0;
 			}
+
+
 			/* demo styles */
 			body {
 			background: #f0f0f0;
 			color: #000;
 			}
+
+
 			.page {
 			background: transparent;
 			width: 100%;
@@ -76,6 +94,8 @@
 			padding: 0px;
 			overflow: hidden;
 			}
+
+
 			.demo {
 			min-height: calc(100vh - 8rem);
 			display: flex;
@@ -87,6 +107,8 @@
 			margin-bottom: 4rem;
 			overflow: scroll;
 			}
+
+
 			.font-container {
 			overflow-x: auto;
 			overflow-y: hidden;
@@ -95,10 +117,14 @@
 			white-space: nowrap;
 			padding-bottom: 5px;
 			}
+
+
 			.letters {
 			font-size: 10px;
 			margin-bottom: 20px;
 			}
+
+
 			pre {
 			display: block;
 			padding: 9px;
@@ -111,6 +137,8 @@
 			overflow-x: auto;
 			border: 1px solid rgba(0,0,0,.1);
 			}
+
+
 			h1,.h1,
 			h2,.h2,
 			h3,.h3,
@@ -122,6 +150,8 @@
 			text-transform: uppercase;
 			letter-spacing: -.02rem;
 			}
+
+
 			.header h2,
 			.logo span{
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
@@ -137,6 +167,8 @@
 			top: -3px;
 			left: 0;
 			}
+
+
 			.header {
 			display: flex;
 			align-content: center;
@@ -146,12 +178,16 @@
 			border-bottom: 1px solid #002451;
 			margin-bottom: 4rem;
 			}
+
+
 			.header h2 {
 			padding:0px;
 			margin: 0px;
 			display: inline-block;
 			top: 0px;
 			}
+
+
 			h1,.h1,
 			h2,.h2,
 			h3,.h3,
@@ -165,6 +201,8 @@
 			color: #002451;
 			font-size: 15px;
 			}
+
+
 			.hero{
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
 			font-weight: 100;
@@ -175,20 +213,30 @@
 			padding: 4rem 0;
 			font-size: 36px;
 			}
+
+
 			.medium{
 			font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
 			}
+
+
 			.medium-italic{
 			font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
 			font-style: italic;
 			}
+
+
 			.regular{
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
 			}
+
+
 			.regular-italic{
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
 			font-style: italic;
 			}
+
+
 			p{
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
 			font-weight: 100;
@@ -199,13 +247,19 @@
 			font-size: 12px;
 			margin-bottom: 20px;
 			}
+
+
 			a{
 			color: #002451;
 			text-decoration: none;
 			}
+
+
 			a:hover{
 			text-decoration: underline;
 			}
+
+
 			strong, b{
 			font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
 			font-weight: 100;
@@ -216,6 +270,8 @@
 			font-size: 12px;
 			line-height: 14px;
 			}
+
+
 			marquee *,
 			footer *,footer{ 
 			font-family: 'Founders Grotesk Regular', Arial, Helvetica, sans-serif;
@@ -227,9 +283,13 @@
 			font-size: 10px;
 			line-height: 12px;
 			}
+
+
 			footer{
 			padding:10px 0px;
 			}
+
+
 			marquee{
 			border-top:1px solid  #002451;
 			border-bottom:1px solid  #002451;
@@ -238,6 +298,8 @@
 			letter-spacing: 2px;
 			text-transform: uppercase;
 			}
+
+
 			.mockup{
 			width: calc(100% - 60px);
 			height:auto;
@@ -245,121 +307,155 @@
 			transition: all .5s linear;
 			margin:20px;
 			}
+
+
 			.right{
 			//float:right;
-			} 
+			}
+            
+            
 			.right::before{
 			clear:both;
 			content:" ";
 			}
+
+
 			.right::before{
 			clear:both;
 			content:" ";
 			}
-			/* responsive */
-			@media (max-width: 990px) {
-			.mockup{
-			padding: 10px;
-			max-width: calc(100% - 20px);
-			object-fit: contain;
-			}
-			}
-			@media (max-width: 420px) {
-			.page {
-			width: auto;
-			margin: 0;
-			}
-			.header {
-			display: flex;
-			flex-direction: column-reverse;
-			align-items: flex-start;
-			justify-content: space-between;
-			padding: 20px;
-			}
-			.mockup{
-			padding: 5px;
-			max-width: calc(100% - 10px);
-			height: auto;
-			object-fit: contain;
-			}
-			}
+
+
+		
+
+
 			:root {
 			--font-sans: system-ui, sans-serif;
 			--text-color: #333;
 			--accent: #0066cc;
 			--border-color: #e5e5e5;
+            --desktop-width: var(--desktop-width);
+            --mobile-width: 300px;
 			}
 
 
 
-
+            
 
 
 
 			body {
-			font-family: var(--font-sans);
-			color: var(--text-color);
-			background-color: #fff;
-			margin: 0;
-			margin-left: auto;
-			margin-right: auto;
-			line-height: 1.8;
-			}
-			h1, h2 {
-			font-weight:normal;
-			margin-top: 60px;
-			margin-bottom: 20px;
-			border-bottom: 2px solid var(--border-color);
-			padding-bottom: 6px;
-			}
+                font-family: var(--font-sans);
+                color: var(--text-color);
+                background-color: #fff;
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 1.8;
+                width: 100vw;
+                overflow-x: hidden;
+            }
+
+
+
+            h1, h2 {
+                font-weight: normal;
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 6px;
+                max-width: 100%;
+                width: var(--desktop-width);
+                margin: 60px auto 20px;
+            }
+
+
+
 			p {
 			margin: 8px 0;
 			}
-			table {
-			width: 100%;
-			border-collapse: collapse;
-			margin-top: 30px;
-			}
+
+
+
+            table {
+                width: var(--desktop-width);
+                border-collapse: collapse;
+                max-width: 100%;
+                margin: 30px auto;
+            }
+
+
+
 			thead th {
 			text-align: left;
-			font-size: 14px;
 			color: #666;
 			border-bottom: 2px solid var(--border-color);
 			padding: 12px 0;
 			}
+
+
+
 			td {
 			padding: 18px 0;
 			vertical-align: top;
 			border-bottom: 1px solid var(--border-color);
 			}
+
+
+
 			.right {
 			text-align: right;
 			}
+
+
+
 			.total {
 			font-weight:normal;
 			}
+
+
+
 			a {
 			color: var(--accent);
 			text-decoration: none;
 			}
+
+
+
 			a:hover {
 			text-decoration: underline;
 			}
+
+
+
 			.section {
 			margin-top: 80px;
 			}
+
+
+
 			.description {
 			font-size: 15px;
 			color: #444;
 			}
+
+
+
 			.top-info {
-			margin-bottom: 40px;
-			}
+                max-width: 100%;
+                width: var(--desktop-width);
+                margin: 0 auto 40px;
+                display: block;
+            }
+
+
+
 			.project {
 			margin-top: 60px;
 			padding-bottom:60px;
 			border-bottom: 1px solid var(--border-color);
-			}      
+			}
+            
+            
+
 
             .images {
                 display: flex;
@@ -377,11 +473,15 @@
                 min-width: 800px;
 			}
 			img.heading{
-                width:600px;
+                width:var(--desktop-width);
                 max-width: 100%;
-                margin:0 auto;
-                display:inline-block;
+                margin:20px auto;
+                display:block;
 			}
+
+           
+
+
 
             .btn{
                 border:1px solid #0066cc;
@@ -395,6 +495,48 @@
                 background-color: #0066cc;
                 color:#fff;
             }
+
+
+            	/* responsive */
+			@media (max-width: 990px) {
+			.mockup{
+			padding: 10px;
+			max-width: calc(100% - 20px);
+			object-fit: contain;
+			}
+
+            
+			}
+
+            
+			@media (max-width: 420px) {
+			.page {
+			width: auto;
+			margin: 0;
+			}
+
+            
+			.header {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: flex-start;
+			justify-content: space-between;
+			padding: 20px;
+			}
+
+            
+			.mockup{
+			padding: 5px;
+			max-width: calc(100% - 10px);
+			height: auto;
+			object-fit: contain;
+			}
+
+            
+			}
+
+
+
 		</style>
 	</head>
 	<body>
