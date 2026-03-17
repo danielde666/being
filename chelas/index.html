@@ -295,12 +295,14 @@
 				gap: 18px;
 				overflow-x: auto;
 				padding-bottom: 8px;
-				scrollbar-width: thin;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
 				-webkit-overflow-scrolling: touch;
+				padding-left:20vw;
 			}
 
 			.images::-webkit-scrollbar {
-				height: 8px;
+				display: none;
 			}
 
 			.image img {
@@ -320,6 +322,21 @@
 				clip: rect(0, 0, 0, 0);
 				white-space: nowrap;
 				border: 0;
+			}
+
+			.site-footer {
+				max-width: var(--content);
+				margin: 72px auto 0;
+				padding-top: 18px;
+				font-size: 16px;
+				line-height: 1.4;
+				color: var(--muted);
+			}
+
+			.site-footer p {
+				margin: 0;
+				font-size: 16px;
+				color: var(--muted);
 			}
 
 			@media (max-width: 900px) {
@@ -367,6 +384,11 @@
 				.image img {
 					height: 42vh;
 					min-width: 300px;
+				}
+
+				.site-footer,
+				.site-footer p {
+					font-size: 14px;
 				}
 			}
 		</style>
@@ -496,7 +518,9 @@
 						</table>
 					</div>
 					<div class="cta-row">
+						<section class="note-block" >
 						<a href="https://dannyde.harvestapp.com/client/estimates/1959e1827b8dea2d1d1163aa5a556ceedae39409" target="_blank" rel="noopener noreferrer" class="button">View and Accept</a>
+						</section>
 					</div>
 				</section>
 
@@ -518,12 +542,16 @@
 				</section>
 
 				<section class="project-list" aria-labelledby="projects-title">
-					<h2 id="projects-title">Relevant Projects</h2>
-					<p>Below are past and current projects that align with the scope, visual discipline, and technical requirements of the Chelas website.</p>
+					<section class="note-block" >
+						<h2 id="projects-title">Relevant Projects</h2>
+						<p>Below are past and current projects that align with the scope, visual discipline, and technical requirements of the Chelas website.</p>
+					</section>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>JII Sports</h3>
 						<p>Branding, Art Direction, Apparel Design, Website Development, Marketing, Consulting.</p>
+						</section>
 						<div class="images" aria-label="Jii project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.18.58_AM.png?v=1746120830" alt="Jii homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.19.06_AM.png?v=1746120828" alt="Jii category page screenshot"></div>
@@ -531,120 +559,146 @@
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.19.44_AM.png?v=1746120868" alt="Jii editorial page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.19.56_AM.png?v=1746120883" alt="Jii mobile or detail screenshot"></div>
 						</div>
-						<p><a href="https://www.jiisports.com/" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://www.jiisports.com/" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Nina Runsdorf</h3>
 						<p>UX Design and website development.</p>
+						</section>
 						<div class="images" aria-label="Nina Runsdorf project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.10.16_AM.png?v=1746120899" alt="Nina Runsdorf homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.10.27_AM.png?v=1746120845" alt="Nina Runsdorf editorial page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.10.36_AM.png?v=1746120853" alt="Nina Runsdorf interior page screenshot"></div>
 						</div>
-						<p><a href="https://www.ninarunsdorf.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://www.ninarunsdorf.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Olga Basha</h3>
 						<p>User experience, website design, and development.</p>
+						</section>
 						<div class="images" aria-label="Olga Basha project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.14.40_AM.png?v=1746120870" alt="Olga Basha homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.14.54_AM.png?v=1746120869" alt="Olga Basha collection page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.15.02_AM.png?v=1746120844" alt="Olga Basha product page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.14.50_AM.png?v=1746120864" alt="Olga Basha detail page screenshot"></div>
 						</div>
-						<p>In Development</p>
+						<section class="note-block" ><p>In Development</p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Shereen Mohammad</h3>
 						<p>Art Direction, Website design, Website Development.</p>
+						</section>
 						<div class="images" aria-label="Shereen Mohammad project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.08.25_AM.png?v=1746120862" alt="Shereen Mohammad homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.37.01_AM.png?v=1746121093" alt="Shereen Mohammad interior page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.37.35_AM.png?v=1746121091" alt="Shereen Mohammad detail page screenshot"></div>
 						</div>
-						<p><a href="https://shereenmohammad.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://shereenmohammad.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Vivien Ramsay</h3>
 						<p>UX, design and website development.</p>
+						</section>
 						<div class="images" aria-label="Vivien Ramsay project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.21.18_AM.png?v=1746120890" alt="Vivien Ramsay homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.21.21_AM.png?v=1746120857" alt="Vivien Ramsay interior page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.21.56_AM.png?v=1746120896" alt="Vivien Ramsay mobile or alternate view screenshot"></div>
 						</div>
-						<p><a href="https://vivienramsay.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://vivienramsay.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>French Presse Linens</h3>
 						<p>Branding and Logo Design, website design and development.</p>
+						</section>
 						<div class="images" aria-label="French Presse Linens project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.22.26_AM.png?v=1746120896" alt="French Presse Linens homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.23.43_AM.png?v=1746120883" alt="French Presse Linens catalog screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.22.41_AM.png?v=1746120849" alt="French Presse Linens product screenshot"></div>
 						</div>
-						<p><a href="https://frenchpresse.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://frenchpresse.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Zycloom</h3>
 						<p>UX, design and website development.</p>
+						</section>
 						<div class="images" aria-label="Zycloom project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.14.26_AM.png?v=1746120886" alt="Zycloom homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.09.01_AM.png?v=1746120886" alt="Zycloom interior page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.08.45_AM.png?v=1746120885" alt="Zycloom alternate page screenshot"></div>
 						</div>
-						<p><a href="https://zycloom.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://zycloom.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Samira Larouci</h3>
 						<p>Data migration, consulting and website design &amp; development.</p>
+						</section>
 						<div class="images" aria-label="Samira Larouci project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.11.37_AM.png?v=1746120872" alt="Samira Larouci homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.12.25_AM.png?v=1746120854" alt="Samira Larouci catalog screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.12.50_AM.png?v=1746120852" alt="Samira Larouci product detail screenshot"></div>
 						</div>
-						<p><a href="https://www.samiralarouci.com" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://www.samiralarouci.com" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Henri</h3>
 						<p>UX, design, custom fonts, and website development.</p>
+						</section>
 						<div class="images" aria-label="Henri project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.27.45_AM.png?v=1746120898" alt="Henri homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.29.27_AM.png?v=1746120894" alt="Henri interior page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.29.38_AM.png?v=1746120895" alt="Henri alternate detail screenshot"></div>
 						</div>
-						<p>In Development</p>
+						<section class="note-block" ><p>In Development</p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Lucien Smith Studio</h3>
 						<p>UX, design and website development.</p>
+						</section>
 						<div class="images" aria-label="Lucien Smith Studio project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_10.15.49_AM.png?v=1746120832" alt="Lucien Smith Studio homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-05-01_at_12.07.33_PM.png?v=1746126461" alt="Lucien Smith Studio alternate page screenshot"></div>
 						</div>
-						<p><a href="https://luciensmithstudio.com/" target="_blank" rel="noopener noreferrer">Ongoing</a></p>
+						<section class="note-block" ><p><a href="https://luciensmithstudio.com/" target="_blank" rel="noopener noreferrer">Ongoing</a></p></section>
 					</article>
 
 					<article class="project">
+						<section class="note-block" >
 						<h3>Alexa Runsdorf</h3>
 						<p>UX, design, logo, and website development.</p>
+						</section>
 						<div class="images" aria-label="Alexa Runsdorf project screenshots">
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-06-22_at_4.26.30_PM.png?v=1750650587" alt="Alexa Runsdorf homepage screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-06-22_at_4.26.25_PM.png?v=1750650584" alt="Alexa Runsdorf interior page screenshot"></div>
 							<div class="image"><img src="https://cdn.shopify.com/s/files/1/0666/6269/4959/files/Screenshot_2025-06-22_at_4.26.47_PM.png?v=1750650582" alt="Alexa Runsdorf alternate page screenshot"></div>
 						</div>
-						<p><a href="https://alexarunsdorf.com/" target="_blank" rel="noopener noreferrer">View Project</a></p>
+						<section class="note-block" ><p><a href="https://alexarunsdorf.com/" target="_blank" rel="noopener noreferrer">View Project</a></p></section>
 					</article>
 				</section>
 			</main>
+			<footer class="site-footer">
+				<p><span id="footer-year">2026</span> • Daniel De La Rosa • <a href="mailto:danieljdlr@gmail.com">danieljdlr@gmail.com</a> • <a href="tel:+18053147707">+1 805 314 7707</a></p>
+			</footer>
 		</div>
+		<script>
+			document.getElementById('footer-year').textContent = new Date().getFullYear();
+		</script>
 	</body>
 </html>
