@@ -7,14 +7,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="robots" content="noindex, noarchive">
 		<meta name="format-detection" content="telephone=no">
-		<meta name="description" content="Estimate 182 for Chelas Mexican Kitchen website redesign with SEO and accessibility improvements.">
-		<title>Estimate 182 - Chelas Mexican Kitchen x Daniel De La Rosa</title>
+		<meta name="description" content="Updated estimate 182 (April 11, 2026) for Chelas Mexican Kitchen: Shopify redesign with SEO and accessibility focus. Revised scope, $4,250 total.">
+		<title>Estimate 182 (Updated) - Chelas Mexican Kitchen x Daniel De La Rosa</title>
 		<link href="https://www.beingl.ink/files/jii-management/fonts/web/foundersgrotesk.css" rel="stylesheet">
-		<meta property="og:title" content="Estimate 182 - Chelas Mexican Kitchen x Daniel De La Rosa">
-		<meta property="og:url" content="https://www.beingl.ink/chelas">
-		<meta property="og:image" content="https://www.beingl.ink/chelas/v2/CHELAS-DANIEL-DELAROSA-REVISED.jpg">
-		<meta property="og:description" content="Chelas Mexican Kitchen 2026 website redesign estimate covering SEO, accessibility, local pages, and launch support.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Estimate 182 (Updated) - Chelas Mexican Kitchen x Daniel De La Rosa">
+		<meta property="og:url" content="https://www.beingl.ink/chelas/v2/">
+		<meta property="og:image" content="https://www.beingl.ink/chelas/v2/chelas-daniel-delarosa-revised.jpg">
+		<meta property="og:image:alt" content="Chelas Mexican Kitchen x Daniel De La Rosa — revised estimate preview image">
+		<meta property="og:description" content="Updated April 2026 estimate for Chelas Mexican Kitchen: Shopify redesign, SEO, and accessibility. Revised line items; $4,250 estimate total.">
 		<meta property="og:site_name" content="Chelas Mexican Kitchen x Daniel De La Rosa">
+		<meta property="fb:app_id" content="">
 		<style>
 			:root {
 				--bg: #fff;
@@ -396,6 +399,124 @@
 					font-size: 14px;
 				}
 			}
+
+			/* Mobile: Harvest-style stacked line items (readable without horizontal scroll) */
+			@media (max-width: 640px) {
+				.table-wrap {
+					overflow-x: visible;
+				}
+
+				.estimate-table {
+					display: block;
+					width: 100%;
+					border: 0;
+				}
+
+				.estimate-table caption {
+					font-size: 12px;
+					line-height: 1.35;
+					margin-bottom: 14px;
+				}
+
+				.estimate-table thead {
+					position: absolute;
+					width: 1px;
+					height: 1px;
+					padding: 0;
+					margin: -1px;
+					overflow: hidden;
+					clip: rect(0, 0, 0, 0);
+					white-space: nowrap;
+					border: 0;
+				}
+
+				.estimate-table tbody,
+				.estimate-table tfoot {
+					display: block;
+					width: 100%;
+				}
+
+				.estimate-table tbody tr,
+				.estimate-table tfoot tr.total {
+					display: block;
+					margin-bottom: 10px;
+					border: 1px solid var(--border-strong);
+					padding: 12px 12px 10px;
+					background: rgba(24, 34, 48, 0.035);
+				}
+
+				.estimate-table tfoot tr.total {
+					margin-bottom: 0;
+					background: rgba(24, 34, 48, 0.05);
+				}
+
+				.estimate-table tbody td,
+				.estimate-table tfoot td {
+					display: block;
+					width: 100%;
+					border: 0;
+					padding: 0;
+					font-size: 12px;
+					line-height: 1.4;
+				}
+
+				.estimate-table tbody td.description {
+					padding-bottom: 10px;
+					margin-bottom: 8px;
+					border-bottom: 1px solid var(--border);
+					overflow-wrap: anywhere;
+				}
+
+				.estimate-table tbody td.description strong {
+					font-size: 13px;
+					margin-bottom: 5px;
+				}
+
+				.estimate-table tbody td.right {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: baseline;
+					gap: 10px;
+					padding-top: 5px;
+					text-align: left !important;
+					white-space: normal;
+				}
+
+				.estimate-table tbody td.right::before {
+					content: attr(data-label);
+					flex-shrink: 0;
+					font-size: 11px;
+					font-weight: normal;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+					color: var(--muted);
+				}
+
+				.estimate-table tfoot .total td {
+					font-size: 13px;
+				}
+
+				.estimate-table tfoot .total td:first-child {
+					padding-bottom: 8px;
+					margin-bottom: 6px;
+					border-bottom: 1px solid var(--border);
+					font-size: 14px;
+					font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
+				}
+
+				.estimate-table tfoot .total td:last-child {
+					display: block;
+					text-align: right !important;
+					font-size: 17px;
+					padding-top: 2px;
+					font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
+				}
+
+				.estimate-table tfoot .total td:last-child::before {
+					content: none;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -416,7 +537,7 @@
 				<section aria-labelledby="estimate-breakdown">
 					<h2 id="estimate-breakdown">Estimate Breakdown</h2>
 					<div class="table-wrap">
-						<table>
+						<table class="estimate-table">
 							<caption>Estimated hours and fees for the Chelas Mexican Kitchen website redesign.</caption>
 							<thead>
 								<tr>
@@ -435,9 +556,9 @@
 										• Sitemap cleanup, page planning, CTA structure<br>
 										• Content organization and ADA-minded layout planning
 									</td>
-									<td class="right">6.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$750.00</td>
+									<td class="right" data-label="Quantity">6.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$750.00</td>
 								</tr>
 								<tr>
 									
@@ -446,19 +567,19 @@
 										• Hero banner, quick links, featured specials, location highlights<br>
 										• Social proof, Instagram embed, email / SMS signup
 									</td>
-									<td class="right">8.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$1,000.00</td>
+									<td class="right" data-label="Quantity">8.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$1,000.00</td>
 								</tr>
 								<tr>
 									
 									<td class="description" colspan="3">
 										<strong>Core Interior Pages - 6 hrs</strong><br>
-										• Menus, About, Contact, Accessibility / Policies
+										• Menus, About, Contact, Accessibility / Policies, Locations Page (basic)
 									</td>
-									<td class="right">6.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$750.00</td>
+									<td class="right" data-label="Quantity">6.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$750.00</td>
 								</tr>
 								<tr>
 									
@@ -466,9 +587,9 @@
 										<strong>Revenue Pages + Integrations - 4 hrs</strong><br>
 										• Catering page, Gift Cards, Merchandise
 									</td>
-									<td class="right">4.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$500.00</td>
+									<td class="right" data-label="Quantity">4.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$500.00</td>
 								</tr>
 								<tr>
 									
@@ -477,9 +598,9 @@
 										• Schema markup, internal linking, metadata structure<br>
 										• Location keyword setup and mobile performance optimization
 									</td>
-									<td class="right">6.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$750.00</td>
+									<td class="right" data-label="Quantity">6.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$750.00</td>
 								</tr>
 								<tr>
 									
@@ -487,9 +608,9 @@
 										<strong>Mobile Optimization, QA, Revisions + Launch - 4 hrs</strong><br>
 										• Final testing, responsive cleanup, accessibility review pass, launch support
 									</td>
-									<td class="right">4.00</td>
-									<td class="right">$125.00</td>
-									<td class="right">$500.00</td>
+									<td class="right" data-label="Quantity">4.00</td>
+									<td class="right" data-label="Unit price">$125.00</td>
+									<td class="right" data-label="Amount">$500.00</td>
 								</tr>
 							</tbody>
 							<tfoot>
@@ -521,12 +642,12 @@
 				</section>
 
 				<section class="note-block" aria-labelledby="updated-version-title">
-					<h2 id="updated-version-title">Updated Version</h2>
-					<p>This updated version removes: 24 hours &mdash; $3,000.00<br>
-                        - Locations Section + Local SEO Pages <i>removes 10 hrs</i><br>
-                        - Core Interior Pages <i>removes 4 hrs</i><br>
-                        - Revenue Pages + Integrations <i>removes 6 hrs</i><br>
-                        - Blog / News Setup + Community / Social <i>removes 4 hrs</i></p>
+					<h2 id="updated-version-title">Updated Version<br><small>Removes &mdash; <i>24 hours &ndash; $3,000.00</i></small></h2>
+					<p>
+                        - Custom Locations Section  (with maps, location detail pages) + Local SEO Pages - <i>removes 10 hrs</i><br>
+                        - Core Interior Pages - <i>removes 4 hrs</i><br>
+                        - Revenue Pages + Integrations - <i>removes 6 hrs</i><br>
+                        - Blog / News Setup + Community / Social - <i>removes 4 hrs</i></p>
 				</section>
 
 				
