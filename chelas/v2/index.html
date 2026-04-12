@@ -225,7 +225,7 @@
 				border-bottom: 1px solid var(--border);
 			}
 
-			tbody td:first-child {
+			tbody td:first-child:not(.description) {
 				color: var(--text);
 				width: 12%;
 				white-space: nowrap;
@@ -233,10 +233,13 @@
 
 			td.description {
 				width: 56%;
+				white-space: normal;
+				overflow-wrap: anywhere;
 			}
 
 			td.description strong {
 				display: inline-block;
+				max-width: 100%;
 				margin-bottom: 4px;
 				font-size: 19px;
 				font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
@@ -465,7 +468,10 @@
 					padding-bottom: 10px;
 					margin-bottom: 8px;
 					border-bottom: 1px solid var(--border);
+					white-space: normal;
 					overflow-wrap: anywhere;
+					min-width: 0;
+					max-width: 100%;
 				}
 
 				.estimate-table tbody td.description strong {
