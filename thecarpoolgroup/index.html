@@ -779,29 +779,57 @@
 		<script>
 			document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-			// Header star animation on first hover
 			const mainHeader = document.getElementById('main-header');
 			const headerStar = document.getElementById('header-star');
-			let headerHovered = false;
-
-			mainHeader.addEventListener('mouseenter', function() {
-				if (!headerHovered) {
-					headerHovered = true;
-					headerStar.classList.add('animate');
-				}
-			});
-
-			// Button star animation on first hover
 			const acceptButton = document.getElementById('accept-button');
 			const buttonStar = document.getElementById('button-star');
-			let buttonHovered = false;
+			let headerPlayed = false;
+			let buttonPlayed = false;
 
-			acceptButton.addEventListener('mouseenter', function() {
-				if (!buttonHovered) {
-					buttonHovered = true;
-					buttonStar.classList.add('animate');
+			function playHeaderStar() {
+				if (headerPlayed) return;
+				headerPlayed = true;
+				headerStar.classList.add('animate');
+			}
+
+			function playButtonStar() {
+				if (buttonPlayed) return;
+				buttonPlayed = true;
+				buttonStar.classList.add('animate');
+			}
+
+			const mqMobile = window.matchMedia('(max-width: 900px)');
+
+			if (mqMobile.matches) {
+				if (document.readyState === 'complete') {
+					playHeaderStar();
+				} else {
+					window.addEventListener('load', function() {
+						playHeaderStar();
+					});
 				}
-			});
+
+				// Fire when the button intersects the bottom third of the viewport
+				const buttonStarObserver = new IntersectionObserver(
+					function(entries) {
+						entries.forEach(function(entry) {
+							if (entry.isIntersecting) {
+								playButtonStar();
+								buttonStarObserver.disconnect();
+							}
+						});
+					},
+					{ root: null, rootMargin: '-66.666% 0px 0px 0px', threshold: 0 }
+				);
+				buttonStarObserver.observe(acceptButton);
+			} else {
+				mainHeader.addEventListener('mouseenter', function() {
+					playHeaderStar();
+				});
+				acceptButton.addEventListener('mouseenter', function() {
+					playButtonStar();
+				});
+			}
 		</script>
 	</body>
 </html>
