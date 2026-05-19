@@ -85,7 +85,10 @@
 			.h1, .h1 a{
 				font-weight: 300;
 				font-family: 'Inconsolata', monospace;
-				color:black;
+				color:rgb(255, 203, 203);
+
+			font-family: 'Founders Grotesk Medium', Arial, Helvetica, sans-serif;
+				font-size: clamp(32px, 5vw, 104px);
 				
 			}
 
@@ -93,12 +96,14 @@
 			.h1:hover, .h1 a:hover{
 
 
-				font-weight: 300;
-				font-family: 'Inconsolata', monospace;
-				color:#71e7b8;
 				text-decoration: none;
 				cursor: pointer;
 			}
+
+
+
+
+
 
 
 
@@ -142,10 +147,14 @@ input:-internal-autofill-selected {
     padding: 20px;
     margin: 0;
     border: none;
-    border-radius: 0px;
-    background: url(treevector.svg);
-    background-position: 0 0;
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+    background-image: url(camo.svg);
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 			.my-logo path,
@@ -524,10 +533,8 @@ input:-internal-autofill-selected {
 					right:20px;
 				}
 				.main-outer{
-
-
 					padding: 10px;
-					margin: 10px;
+					margin: 0;
 				}
 
 			}
@@ -567,7 +574,7 @@ input:-internal-autofill-selected {
 		<div class="main-outer">
 			<header>
 				
-					<h1 class="logo"><img src="favicon.png" alt="b eing" width="300" height="auto" style="filter: invert(1);"></h1>
+					<h1 class="logo">DANIEL DE LA ROSA</h1>
 
 	
 			</header>
