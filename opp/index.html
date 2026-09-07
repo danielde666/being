@@ -424,6 +424,10 @@
 				color: var(--muted);
 			}
 
+			.site-footer{
+				display:flex; justify-content: space-between;
+
+			}
 			.site-footer p {
 				margin: 0;
 				font-size: 16px;
@@ -527,6 +531,13 @@
 
 			/* Mobile: Harvest-style stacked line items (readable without horizontal scroll) */
 			@media (max-width: 640px) {
+
+				.site-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+				}
 				.table-wrap {
 					overflow-x: visible;
 				}
@@ -804,7 +815,7 @@
 					</p>
 				</section>
 			</main>
-			<footer class="site-footer" style="display:flex; justify-content: space-between;">
+			<footer class="site-footer">
 				<span id="footer-year">2026</span> • <span >Daniel De La Rosa</span> • <span>Los Angeles, CA</span> • <a href="mailto:danieljdlr@gmail.com">danieljdlr@gmail.com</a> • <a href="tel:+18053147707">+1 805 314 7707</a>
 			</footer>
 		</div>
